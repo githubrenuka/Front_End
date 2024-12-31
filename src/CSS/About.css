@@ -1,0 +1,55 @@
+.at-a-glance-section {
+   /* background-color: #000; 
+    color: #fff; */
+    padding: 40px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .glance-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .glance-image {
+    flex: 1;
+  }
+  
+  .glance-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .glance-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .glance-content h2 {
+    color: #00cccc; /* Aqua color for the heading */
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .glance-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 768px) {
+    .glance-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .glance-content {
+      padding: 10px;
+    }
+  
+    .glance-image img {
+      margin-bottom: 20px;
+    }
+  }
+  

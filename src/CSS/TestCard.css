@@ -1,0 +1,186 @@
+h5,.text{
+    color:#5b5555;
+}
+/* Keyboard Grid Styling */
+.keyboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    position: relative;
+  }
+  
+ /* .keyboard-card:nth-child(odd) {
+    /*margin-top: 20px;  Add staggered effect for odd cards 
+  }*/
+  
+  .keyboard-card {
+    width: 100%; /* Ensure cards take up full space */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .keyboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #252729;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #666;
+  }
+  .card-body {
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .keyboard-card:nth-child(odd) {
+      margin-top: 10px; /* Reduce stagger on small screens */
+    }
+  
+    .card-title {
+      font-size: 16px;
+    }
+  
+    .card-text {
+      font-size: 13px;
+    }
+  }
+  
+  /* App.css */
+  .hexagon-grid {
+    position: relative;
+    width: 300px; /* Adjust as per requirement */
+    aspect-ratio: 1;
+    margin: 0 auto;
+    
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    ); /* Hexagonal shape */
+    animation: expand-hexagon 2s ease-in-out forwards;
+    transform-origin: 50% 100%; /* Animate from the bottom point */
+  }
+  
+  @keyframes expand-hexagon {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  .hexagon-card {
+    position: absolute;
+    width: 60px; /* Card size */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .hexagon-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Position cards */
+  .hexagon-card:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hexagon-card:nth-child(2) {
+    top: 25%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hexagon-card:nth-child(3) {
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hexagon-card:nth-child(4) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hexagon-card:nth-child(5) {
+    top: 75%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hexagon-card:nth-child(6) {
+    top: 25%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Content Styling */
+  .hexagon-content {
+    padding: 10px;
+    text-align: center;
+  }
+  .banner-title {
+    color: #36ab9c;
+    font-weight: bold;
+    font-family: Cabin;
+    text-transform: uppercase !important;
+    font-size:2rem;
+}
+
+.rounded-circle {
+    border-radius: 10% !important;
+}
+  
+  
+  

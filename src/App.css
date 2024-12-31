@@ -1,0 +1,18 @@
+*{
+  margin:0px;padding:0px;box-sizing:border-box;font-family:Arial,Helvetica,Sans-serif;
+}
+/* Colors extracted from the logo */
+:root {
+  --primary-blue: #005b8f; /* Dark blue from the logo */
+  --secondary-green: #00a36c; /* Green shade from the logo */
+  --text-gray: #4d4d4d; /* Neutral gray for text */
+  --background-light: #f0f9f8; /* Light teal-like background */
+
+  --transparent-bg: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  --solid-bg: #ffffff; /* Solid white */
+  --text-color: #333333; /* Dark text for readability */
+  --hover-color: #005b8f; /* Complementary color from the logo */
+}
+.custom-btn{
+  background: linear-gradient(45deg, rgba(0, 128, 128, 0.5), rgba(8, 101, 136, 0.5));
+}

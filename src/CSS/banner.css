@@ -1,5 +1,5 @@
 .container-fluid{
-    --bs-gutter-x: 0 !important;
+    --bs-gutter-x:0!important;
 }
 .banner_title{
     color: #fff;
@@ -44,7 +44,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
   }
-  * Button styles */
+  /* Button styles */
   .explore-btn {
     background-color: var(--primary-blue);
     border: none;

@@ -59,7 +59,7 @@ const TestCard = () => {
                   <img
                     className="card-img-top rounded-circle animated-image"
                     src={card.imgSrc}
-                    alt={`${card.title} image`}
+                    alt={`${card.title}`}
                     style={{ cursor: 'pointer' }}
                     onClick={() => handleNavigation(card.link)}
                   />

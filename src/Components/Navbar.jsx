@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import {  Modal, Tab } from "react-bootstrap";
-import { Form, Button, InputGroup, FormControl, Container, Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Container, Dropdown } from "react-bootstrap";
+//import { Form, Button, InputGroup, FormControl,  Modal, Tab, Row, Col, } from 'react-bootstrap';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../CSS/Navbar.css'
@@ -8,18 +8,18 @@ import '../CSS/Navbar.css'
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+ // const [showModal, setShowModal] = useState(false);
 
-  const [companyCode, setCompanyCode] = useState('');
-  const [employeeCode, setEmployeeCode] = useState('');
-  const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
+  //const [companyCode, setCompanyCode] = useState('');
+  //const [employeeCode, setEmployeeCode] = useState('');
+ // const [password, setPassword] = useState('');
+  //const [rememberMe, setRememberMe] = useState(false);
+  //const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ // const handleSubmit = (e) => {
+  //  e.preventDefault();
     // Handle form submission logic
-  };
+ // };
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
@@ -29,8 +29,8 @@ function Navbar() {
     setIsScrolled(window.scrollY > 50);
   };
 
-  const handleModalShow = () => setShowModal(true);
-  const handleModalClose = () => setShowModal(false);
+  //const handleModalShow = () => setShowModal(true);
+  //const handleModalClose = () => setShowModal(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
  
   useEffect(() => {
@@ -40,17 +40,17 @@ function Navbar() {
     };
   }, []);
 
-  const loginStyle = {
-    backgroundImage: `url('/images/login.avif')`,
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'contain ', // Ensures full-width without distorting height
+  //const loginStyle = {
+    //backgroundImage: `url('/images/login.avif')`,
+  //  backgroundPosition: 'center',
+  //  backgroundRepeat: 'no-repeat',
+   // backgroundSize: 'contain ', 
    
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    //display: 'flex',
+    //alignItems: 'center',
+    //justifyContent: 'center',
     
-  };
+ // };
   
   return (
     <>
@@ -95,10 +95,10 @@ function Navbar() {
         </Container>
       </div>
 
-      {/* Login Modal */}
+      {/* Login Modal 
       <Modal
         show={showModal}
-        size="lg" // Large modal
+        size="lg" 
         onHide={handleModalClose}
         centered
         dialogClassName="custom-modal" style={loginStyle} >
@@ -166,8 +166,8 @@ function Navbar() {
               </Form.Group>
 
               <div className="d-flex justify-content-between mb-3">
-                <a href="#" style={{ color: '#011327' }}>Forgot password?</a>
-                <a href="#" style={{ color: '#011327' }}>Unlock Account</a>
+                <a href="javascript:void(0)" style={{ color: '#011327' }}>Forgot password?</a>
+                <a href="javascript:void(0)" style={{ color: '#011327' }}>Unlock Account</a>
               </div>
 
               <Button type="submit" className="w-100 mb-2" style={{ backgroundColor: '#011327', borderColor: '#011327' }}>
@@ -197,7 +197,7 @@ function Navbar() {
             </div>
           </Tab.Container>
         </Modal.Body>
-      </Modal>
+      </Modal>*/}
     </>
   );
 }

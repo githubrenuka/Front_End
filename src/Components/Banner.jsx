@@ -64,7 +64,8 @@ const Banner = () => {
         ></i>
       </div>
       <div className="mt-3">
-        <a href="#" onClick={handleShow} className="play-video-link">
+        
+        <a href="#show" onClick={handleShow} className="play-video-link">
           Play Video
         </a>
       </div>
@@ -85,7 +86,7 @@ const Banner = () => {
      
 
       {/* Modal for Playing Video */}
-      <Modal show={show} onHide={handleClose} centered className="custom-modal"
+      <Modal show={show} id="show" onHide={handleClose} centered className="custom-modal"
         size="lg"
         aria-labelledby="contained-modal-title-vcenter">
       

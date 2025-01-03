@@ -60,10 +60,10 @@ const Banner = () => {
         <div className="outer-circle me-2"></div>
         <i
           className="bi bi-play-circle play-icon"
-          style={{ fontSize: '3rem', cursor: 'pointer' }}
+          style={{ fontSize: '1rem', cursor: 'pointer' }}
         ></i>
       </div>
-      <div className="mt-3">
+      <div className="mt">
         
         <a href="#show" onClick={handleShow} className="play-video-link">
           Play Video

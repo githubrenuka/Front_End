@@ -57,11 +57,13 @@ function Navbar() {
       <div className={`navbar ${isScrolled ? "scrolled" : "transparent"}`}>
         <Container fluid className="d-flex justify-content-between align-items-center">
           <div className="logo">
-            <img alt="text" src="images/creative-logo-main.png" />
+          <a href="/">  <img alt="text" src="images/creative-logo-main.png" /></a>
           </div>
           <div className={`nav-links ${menuActive ? "active" : ""}`}>
             <a href="/" className="nav-link">Home</a>
-            {/* Dropdown with Hover */}
+            <a href="#about" className="nav-link">About</a>
+            <a href="#test" className="nav-link">Solutions</a>
+            {/* Dropdown with Hover 
             <Dropdown className=" nav-link" href="/test"
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
@@ -76,10 +78,9 @@ function Navbar() {
                 <Dropdown.Item href="/testing">Testing</Dropdown.Item>
                 <Dropdown.Item href="/devops">DevOps</Dropdown.Item>
               </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown>*/}
             <a href="#testimonial" className="nav-link">Testimonials</a>
-            <a href="#features" className="nav-link">Features</a>
-
+           
           <a href="#footer" className="nav-link"  >Contact</a>
 
           

@@ -15,6 +15,9 @@ import About from '../Components/About';
 
 
 const Mainpage = () => {
+
+
+  
     return (
       <>
         <Navbar />
@@ -22,7 +25,8 @@ const Mainpage = () => {
         <About />
         
        <TestCard />
-       <Features />
+      
+     
 
         <Testimonial />
 

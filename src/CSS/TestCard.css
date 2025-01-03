@@ -1,5 +1,8 @@
-h5,.text{
-    color:#5b5555;
+.text{
+    color:#fff;
+}
+.Offerings-Section{
+  padding:0px 40px 40px;
 }
 /* Keyboard Grid Styling */
 .keyboard-grid {
@@ -172,15 +175,122 @@ h5,.text{
   }
   .banner-title {
     color: #36ab9c;
-    font-weight: bold;
-    font-family: Cabin;
+  font-style:normal;
+    font-family: "Nunito Sans";
     text-transform: uppercase !important;
-    font-size:2rem;
+    font-size: 2rem;
 }
 
 .rounded-circle {
     border-radius: 10% !important;
 }
   
-  
-  
+  /* Dimmed Background */
+.dimmed-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Fade-In and Fade-Out Animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Close Icon Styling */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.2s ease-in-out;
+  padding:1rem;
+    margin: calc(-.5* var(--bs-modal-header-padding-y)) calc(-.5* var(--bs-modal-header-padding-x)) calc(-.5* var(--bs-modal-header-padding-y)) auto;
+}
+
+.close-icon:hover {
+  color:#36ab9c;
+}
+
+/* Page Container Styling */
+.page-container {
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+
+
+/* Download Button Styling */
+.download-btn {
+  background-color: #156272;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.download-btn:hover {
+  background-color: #156272!important;
+}
+
+/* Button Group Layout */
+.button-group {
+  display: flex;
+ /* flex-wrap: wrap;
+  gap: 15px;  Add spacing between buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+.custom-btn{
+  padding:0.375rem!important;border-color:#000!important;
+ }
+ .live-btn{
+  color:#000;background-color:#fff;
+ }
+ .live-btn:hover{
+  color:#156272;background-color:#fff;font-weight: 600;font-style: normal;;border-color:#156272!important;
+ }
+/* Responsive Design */
+@media (max-width: 576px) {
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom-btn {
+    width: 100%;
+  }
+}
+
+
+/*overlay*/

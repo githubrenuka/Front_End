@@ -214,15 +214,22 @@
   }
   
   /* Developer Card */
-  .developer-card {
+  /*.developer-card {
     background-color: #111;
     border-radius: 10px;
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }*/
+  .developer-card {
+  background-color:#e5e5e500;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(128 187 192);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
   .developer-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
@@ -243,7 +250,7 @@
   
   .developer-designation {
     font-size: 0.9rem;
-    color: #ccc;
+    color: #000;
   }
   
   /* Slick Dots Styling */

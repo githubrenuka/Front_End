@@ -27,10 +27,12 @@
     padding: 20px;
   }
   
-  .glance-content h2 {
-    color: #00cccc; 
-    font-size: 28px;
-    margin-bottom: 20px;
+  .glance-title {
+    color: #36ab9c;
+  font-style:normal;
+    font-family: "Nunito Sans";
+    text-transform: uppercase !important;
+    font-size: 2rem;
   }
   
   .glance-content p {

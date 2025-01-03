@@ -56,7 +56,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="testimonial-container fluid">
+    <div className="testimonial-container fluid" id="testimonial">
       {/*<div className="testimonial-header">
         <h2 className="developer-title">WHAT OUR CLIENTS ARE SAYING</h2>
         <div className="quote-icon">❝</div>

@@ -2,12 +2,8 @@ import React, { useState } from "react";
 import { Container, Card, Button, Modal } from "react-bootstrap";
 import '../CSS/Navbar.css'
 import '../CSS/POCList.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
-
-
-const POCList = () => {
+const AIList = () => {
   const [show, setShow] = useState(false);
   const [selectedPOC, setSelectedPOC] = useState(null);
 
@@ -74,7 +70,7 @@ const POCList = () => {
   return (
     <section className="py-5"  style={ListStyle} >
       <Container>
-        <h2 className="text-center mb-4 banner-title">Web Solutions</h2>
+        <h2 className="text-center mb-4 banner-title">AI Solutions</h2>
         <h5 className="text-center mb-5 dec">
           Explore our wide range of services designed to meet your needs and help your business thrive.
         </h5>
@@ -92,13 +88,9 @@ const POCList = () => {
                </div>
                <Card.Title>{POC.title}</Card.Title>
                <Card.Text>{POC.description}</Card.Text>
-               <div className="button-group">
-               <Button className="custom-btn live-btn" onClick={() => handleShow(POC)}>
-                 Live Demo
+               <Button className="custom-btn" onClick={() => handleShow(POC)}>
+                 Learn More
                </Button>
-               <Button className="custom-btn download-btn" href={POC.video}  download>
-               <FontAwesomeIcon icon={faDownload} /> 
-               </Button></div>
              </Card.Body>
            </Card>
          </div>
@@ -142,4 +134,4 @@ const POCList = () => {
   );
 };
 
-export default POCList;
+export default AIList;

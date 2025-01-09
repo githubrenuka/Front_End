@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Container, Card, Button, Modal } from "react-bootstrap";
 import '../CSS/Navbar.css'
 import '../CSS/POCList.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const DevOpsList = () => {
   const [show, setShow] = useState(false);
@@ -16,8 +18,9 @@ const DevOpsList = () => {
        
   
     
-    color: '#fff',
-    backgroundColor:'#011725',
+  
+    color: '#000',
+    backgroundColor:'rgb(231, 239, 241)',
   
   
 };
@@ -88,9 +91,13 @@ const DevOpsList = () => {
                </div>
                <Card.Title>{POC.title}</Card.Title>
                <Card.Text>{POC.description}</Card.Text>
-               <Button className="custom-btn" onClick={() => handleShow(POC)}>
-                 Learn More
-               </Button>
+                <div className="button-group">
+                                            <Button className="custom-btn live-btn" onClick={() => handleShow(POC)}>
+                                              Live Demo
+                                            </Button>
+                                            <Button className="custom-btn download-btn" href={POC.video}  download>
+                                            <FontAwesomeIcon icon={faDownload} /> 
+                                            </Button></div>
              </Card.Body>
            </Card>
          </div>

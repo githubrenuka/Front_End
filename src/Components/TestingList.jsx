@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Container, Card, Button, Modal } from "react-bootstrap";
 import '../CSS/Navbar.css'
 import '../CSS/POCList.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const TestingList = () => {
   const [show, setShow] = useState(false);
@@ -16,8 +18,8 @@ const TestingList = () => {
        
   
     
-    color: '#fff',
-    backgroundColor:'#011725',
+    color: '#000',
+    backgroundColor:'rgb(231, 239, 241)',
   
   
 };
@@ -26,9 +28,9 @@ const TestingList = () => {
     {
       id: 1,
       icon: "https://themexriver.com/wp/choicy-wp/wp-content/uploads/2023/12/s1-icon-1.webp",
-      title: "POC 1",
+      title: "Hellmann Demo",
       description: "Every pleasure is to be welcomed and every pain avoided.",
-      video: "../videos/PDF Upload.mp4",
+      video: "../videos/Hellmann.m4v",
     },
     {
       id: 2,
@@ -70,7 +72,7 @@ const TestingList = () => {
   return (
     <section className="py-5"  style={ListStyle} >
       <Container>
-        <h2 className="text-center mb-4 banner-title">Testing Solutions</h2>
+        <h2 className="text-center mb-4 banner-title">Transport and Logistic Solutions</h2>
         <h5 className="text-center mb-5 dec">
           Explore our wide range of services designed to meet your needs and help your business thrive.
         </h5>
@@ -88,9 +90,13 @@ const TestingList = () => {
                </div>
                <Card.Title>{POC.title}</Card.Title>
                <Card.Text>{POC.description}</Card.Text>
-               <Button className="custom-btn" onClick={() => handleShow(POC)}>
-                 Learn More
-               </Button>
+               <div className="button-group">
+                             <Button className="custom-btn live-btn" onClick={() => handleShow(POC)}>
+                               Live Demo
+                             </Button>
+                             <Button className="custom-btn download-btn" href={POC.video}  download>
+                             <FontAwesomeIcon icon={faDownload} /> 
+                             </Button></div>
              </Card.Body>
            </Card>
          </div>

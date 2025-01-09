@@ -36,8 +36,8 @@ const TestCard = () => {
     
     },
     {
-      title: 'Testing',
-      imgSrc: '/images/img9.jpg',
+      title: 'Transport',
+      imgSrc: '/images/transport.jpg',
       link: '/testing',
       component:<TestingList/>,
       icon:'/images/right.png'

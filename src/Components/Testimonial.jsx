@@ -8,27 +8,27 @@ const developers = [
   {
     name: "Syam",
     designation: "Data Analyst",
-    photo: "",
+    photo: "/images/user.png",
   },
   {
     name: "Jithendra",
     designation: "Backend Developer",
-    photo: "",
+    photo: "/images/user.png",
   },
   {
     name: "Eswar",
     designation: "UI/UX Designer",
-    photo: "",
+    photo: "/images/user.png",
   },
   {
     name: "Ravi",
     designation: "Full Stack Developer",
-    photo: "",
+    photo: "/images/user.png",
   },
   {
     name: "Bhanu",
     designation: "DevOps Engineer",
-    photo: "",
+    photo: "/images/user.png",
   },
 ];
 

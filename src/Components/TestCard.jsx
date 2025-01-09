@@ -1,6 +1,6 @@
 import React, { useEffect,useState,useRef   } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col,Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import '../App.css'; 
 import '../CSS/TestCard.css'
@@ -8,6 +8,9 @@ import POCList from './POCList';
 import AIList from './AIList';
 import TestingList from './TestingList';
 import DevOpsList from './DevOpsList';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faHandPointer } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
+
 
 
 
@@ -19,27 +22,34 @@ const TestCard = () => {
       title: 'Web Development',
       imgSrc: '/images/img6.png',
       link: '/POCList',
-      component:<POCList />
+      component:<POCList />,
+      icon:'/images/right.png'
      
     },
     {
       title: 'AI/ML',
       imgSrc: '/images/img4.jpg',
       link: '/AIList',
-      component:<AIList />
+      component:<AIList />,
+      icon:'/images/right.png'
+     
     
     },
     {
       title: 'Testing',
       imgSrc: '/images/img9.jpg',
       link: '/testing',
-      component:<TestingList/>
+      component:<TestingList/>,
+      icon:'/images/right.png'
+     
     },
     {
       title: 'DevOps',
       imgSrc: '/images/img8.jpg',
       link: '/devops',
-      component:<DevOpsList/>
+      component:<DevOpsList/>,
+      icon:'/images/right.png'
+     
     },
     
   ];
@@ -111,18 +121,28 @@ const handleClose = () => {
                     src={card.imgSrc}
                     alt={`${card.title}`}
                     style={{ cursor: 'pointer' }}
-                    onClick={() => handleNavigation(card.component)}
-                 
-                  />
+                    onClick={() => handleNavigation(card.component)}/>
+
+
                   <div className="card-body text-center">
+                  <div className="title-with-icon"
+               style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px',
+            }}>
                     <h4
                       className="card-title"
-                      style={{ cursor: 'pointer' }}
-                      //onClick={() => handleNavigation(card.link)}
-                      
-                    >
+                      style={{ cursor: 'pointer',fontSize:'16px' }}  
+                      onClick={() => handleNavigation(card.component)}>
                       {card.title}
                     </h4>
+                    <i class="fa-sharp-duotone fa-solid fa-arrow-right" style={{
+      color:'#156272', 
+      fontSize: '16px', 
+    }}></i>
+                    </div>
                   </div>
                 </div>
               </Col>

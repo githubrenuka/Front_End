@@ -24,11 +24,11 @@ const About = () => {
               <h2 className=" text-center mb-3 glance-title">  We are Creative Synergies Group</h2>
               <p>
              
-              We Are A Leading Global Digital Innovation Solution Provider. We Synergize Our Deep Domain Expertise With NextGen Technologies To Deliver Convergence Of Digital Engineering, Embedded Systems And Software Technologies For Our Customers
+              We Are A Leading Global Digital Innovation Solution Provider. We Synergize Our Deep Domain Expertise With NextGen Technologies To Deliver Convergence Of  Software Technologies For Our Customers
               </p>
               <p>
                 From CAE Simulation and AI-powered solutions to Digital
-                Transformation and Cloud-based delivery models, Xitadel is
+                Transformation and Cloud-based delivery models, Creative Synergies is
                 committed to excellence in every dimension.
               </p>
             </div>

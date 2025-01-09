@@ -20,8 +20,8 @@ const POCList = () => {
        
   
     
-    color: '#fff',
-    backgroundColor:'#011725',
+    color: '#000',
+    backgroundColor:'#e7eff1',
   
   
 };

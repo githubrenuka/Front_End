@@ -19,6 +19,3 @@ p{
   --text-color: #333333; /* Dark text for readability */
   --hover-color: #005b8f; /* Complementary color from the logo */
 }
-.btn{
- padding:0.375rem!important;border-color:#000!important;
-}

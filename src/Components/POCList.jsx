@@ -21,7 +21,7 @@ const POCList = () => {
   
    
     color: '#000',
-    backgroundColor:rgb(231, 239, 241),
+    backgroundColor:'rgb(231, 239, 241)',
   
   
 };

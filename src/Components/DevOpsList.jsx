@@ -20,7 +20,7 @@ const DevOpsList = () => {
     
   
     color: '#000',
-    backgroundColor:'rgb(231, 239, 241)',
+    backgroundColor:'#e7eff1',
   
   
 };

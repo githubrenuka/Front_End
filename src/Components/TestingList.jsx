@@ -29,7 +29,7 @@ const TestingList = () => {
       id: 1,
       icon: "https://themexriver.com/wp/choicy-wp/wp-content/uploads/2023/12/s1-icon-1.webp",
       title: "Hellmann Demo",
-      description: "Every pleasure is to be welcomed and every pain avoided.",
+      description: "Hellmann Worldwide Logistics is one of the largest international logistics providers.",
       video: "../videos/Hellmann.m4v",
     },
     {

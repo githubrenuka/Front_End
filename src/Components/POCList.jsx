@@ -19,9 +19,9 @@ const POCList = () => {
   const ListStyle = {
        
   
-    
+   
     color: '#000',
-    backgroundColor:'#e7eff1',
+    backgroundColor:rgb(231, 239, 241),
   
   
 };
